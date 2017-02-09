@@ -18,7 +18,7 @@ namespace Cocopops
             var firstTransaction = new Transaction
             {
                 BaseTransaction =
-                    new BaseTransaction {ExecutingEntityCode = "neko1", TransactionReferenceNumber = "donuts0001"}
+                    new BaseTransaction {ExecutingEntityCode = "neko😿1", TransactionReferenceNumber = "donuts🍩0001" }
             };
 
 
@@ -28,8 +28,8 @@ namespace Cocopops
                 ExtendedTransaction = new ExtendedTransaction
                 {
                     BaseTransaction =
-                        new BaseTransaction {ExecutingEntityCode = "neko2", TransactionReferenceNumber = "cookies0002"},
-                    Comments = "cookies are sometimes better than donuts!",
+                        new BaseTransaction {ExecutingEntityCode = "neko😾2", TransactionReferenceNumber = "cookies🍪0002" },
+                    Comments = "cookies 🍪 are sometimes better than donuts! 🍩",
                     Extra = "etc."
                 }
             };
@@ -66,6 +66,7 @@ namespace Cocopops
                 }
             }
 
+            // 💗
             Console.ReadKey();
         }
     }
