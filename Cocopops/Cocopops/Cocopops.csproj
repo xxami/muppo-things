@@ -62,6 +62,7 @@
     <None Include="Model.Proto\TransactionCollection.proto" />
     <None Include="packages.config" />
     <None Include="protobuild.sh" />
+    <None Include="readme.md" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
