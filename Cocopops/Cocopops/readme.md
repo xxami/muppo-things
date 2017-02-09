@@ -3,6 +3,6 @@
 
  - nuget restore
  - ./protobuild.sh runs protoc on all files in Model.Proto
- - -I flag used to find proto files who require import (i think)
+ - -I flag used to find proto files who require import
  - serialize/deserialize example in Program.cs
  - oneof is kind of cool, maybe?
