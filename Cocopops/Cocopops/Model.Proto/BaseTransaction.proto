@@ -1,0 +1,9 @@
+﻿
+syntax = "proto3";
+package Cocopops.Model;
+option csharp_namespace = "Cocopops.Model.BaseTransaction";
+
+message BaseTransaction {
+	string transaction_reference_number = 1;
+	string executing_entity_code = 2;
+}
