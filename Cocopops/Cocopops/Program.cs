@@ -36,7 +36,7 @@ namespace Cocopops
 
 
             // Two transactions is maaaany transactions
-            var allTheTransactions = new TransactionCollection {Transaction = {firstTransaction, secondTransaction}};
+            var allTheTransactions = new TransactionCollection {Transactions = {firstTransaction, secondTransaction}};
 
             // Serialize all of these things to a file
             using (var outputStream = File.Create("SecretTransactions.dat")) allTheTransactions.WriteTo(outputStream);
@@ -49,7 +49,7 @@ namespace Cocopops
 
 
             // Does it work?
-            foreach (var transaction in transactionCollection.Transaction) {
+            foreach (var transaction in transactionCollection.Transactions) {
 
                 // Oneof determination
                 switch (transaction.TransactionCase)

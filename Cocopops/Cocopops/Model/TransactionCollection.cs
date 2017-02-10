@@ -23,14 +23,14 @@ namespace Cocopops.Model.TransactionCollection {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChtUcmFuc2FjdGlvbkNvbGxlY3Rpb24ucHJvdG8SDkNvY29wb3BzLk1vZGVs",
-            "GhFUcmFuc2FjdGlvbi5wcm90byJJChVUcmFuc2FjdGlvbkNvbGxlY3Rpb24S",
-            "MAoLdHJhbnNhY3Rpb24YASADKAsyGy5Db2NvcG9wcy5Nb2RlbC5UcmFuc2Fj",
-            "dGlvbkInqgIkQ29jb3BvcHMuTW9kZWwuVHJhbnNhY3Rpb25Db2xsZWN0aW9u",
-            "YgZwcm90bzM="));
+            "GhFUcmFuc2FjdGlvbi5wcm90byJKChVUcmFuc2FjdGlvbkNvbGxlY3Rpb24S",
+            "MQoMdHJhbnNhY3Rpb25zGAEgAygLMhsuQ29jb3BvcHMuTW9kZWwuVHJhbnNh",
+            "Y3Rpb25CJ6oCJENvY29wb3BzLk1vZGVsLlRyYW5zYWN0aW9uQ29sbGVjdGlv",
+            "bmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Cocopops.Model.Transaction.TransactionReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Cocopops.Model.TransactionCollection.TransactionCollection), global::Cocopops.Model.TransactionCollection.TransactionCollection.Parser, new[]{ "Transaction" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Cocopops.Model.TransactionCollection.TransactionCollection), global::Cocopops.Model.TransactionCollection.TransactionCollection.Parser, new[]{ "Transactions" }, null, null, null)
           }));
     }
     #endregion
@@ -61,7 +61,7 @@ namespace Cocopops.Model.TransactionCollection {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public TransactionCollection(TransactionCollection other) : this() {
-      transaction_ = other.transaction_.Clone();
+      transactions_ = other.transactions_.Clone();
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -69,14 +69,14 @@ namespace Cocopops.Model.TransactionCollection {
       return new TransactionCollection(this);
     }
 
-    /// <summary>Field number for the "transaction" field.</summary>
-    public const int TransactionFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Cocopops.Model.Transaction.Transaction> _repeated_transaction_codec
+    /// <summary>Field number for the "transactions" field.</summary>
+    public const int TransactionsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Cocopops.Model.Transaction.Transaction> _repeated_transactions_codec
         = pb::FieldCodec.ForMessage(10, global::Cocopops.Model.Transaction.Transaction.Parser);
-    private readonly pbc::RepeatedField<global::Cocopops.Model.Transaction.Transaction> transaction_ = new pbc::RepeatedField<global::Cocopops.Model.Transaction.Transaction>();
+    private readonly pbc::RepeatedField<global::Cocopops.Model.Transaction.Transaction> transactions_ = new pbc::RepeatedField<global::Cocopops.Model.Transaction.Transaction>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Cocopops.Model.Transaction.Transaction> Transaction {
-      get { return transaction_; }
+    public pbc::RepeatedField<global::Cocopops.Model.Transaction.Transaction> Transactions {
+      get { return transactions_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -92,14 +92,14 @@ namespace Cocopops.Model.TransactionCollection {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!transaction_.Equals(other.transaction_)) return false;
+      if(!transactions_.Equals(other.transactions_)) return false;
       return true;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= transaction_.GetHashCode();
+      hash ^= transactions_.GetHashCode();
       return hash;
     }
 
@@ -110,13 +110,13 @@ namespace Cocopops.Model.TransactionCollection {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      transaction_.WriteTo(output, _repeated_transaction_codec);
+      transactions_.WriteTo(output, _repeated_transactions_codec);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      size += transaction_.CalculateSize(_repeated_transaction_codec);
+      size += transactions_.CalculateSize(_repeated_transactions_codec);
       return size;
     }
 
@@ -125,7 +125,7 @@ namespace Cocopops.Model.TransactionCollection {
       if (other == null) {
         return;
       }
-      transaction_.Add(other.transaction_);
+      transactions_.Add(other.transactions_);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -137,7 +137,7 @@ namespace Cocopops.Model.TransactionCollection {
             input.SkipLastField();
             break;
           case 10: {
-            transaction_.AddEntriesFrom(input, _repeated_transaction_codec);
+            transactions_.AddEntriesFrom(input, _repeated_transactions_codec);
             break;
           }
         }

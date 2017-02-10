@@ -6,5 +6,5 @@ option csharp_namespace = "Cocopops.Model.TransactionCollection";
 import "Transaction.proto";
 
 message TransactionCollection {
-	repeated Cocopops.Model.Transaction transaction = 1;
+	repeated Cocopops.Model.Transaction transactions = 1;
 }
