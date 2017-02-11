@@ -38,7 +38,7 @@ namespace Cocopops.Protobuf
         public TransactionCollection GetTransactions(int transactions)
         {
             var collection = new TransactionCollection();
-            for (int i = 0; i <= transactions; i++)
+            for (int i = 0; i < transactions; i++)
             {
                 collection.Transactions.Add(GenerateTransaction(i % 2 == 0));
             }

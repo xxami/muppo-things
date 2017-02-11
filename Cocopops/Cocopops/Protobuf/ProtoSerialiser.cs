@@ -1,10 +1,5 @@
 ﻿
-using System;
 using System.IO;
-using Cocopops.Protobuf.Model;
-using Cocopops.Protobuf.Model.BaseTransaction;
-using Cocopops.Protobuf.Model.ExtendedTransaction;
-using Cocopops.Protobuf.Model.Transaction;
 using Cocopops.Protobuf.Model.TransactionCollection;
 using Google.Protobuf;
 
@@ -12,16 +7,15 @@ namespace Cocopops.Protobuf
 {
     public class ProtoSerialiser
     {
-        private TransactionCollection _transactions { get; set; }
-
-        public void Serialize(Stream outStream)
+        public void Serialize(Stream stream, TransactionCollection transactions)
         {
-            _transactions.WriteTo(new CodedOutputStream(outStream));
+            using (var outStream = new CodedOutputStream(stream))
+                transactions.WriteTo(outStream);
         }
 
-        public TransactionCollection Deserialize(Stream inStream)
+        public TransactionCollection Deserialize(Stream stream)
         {
-            
+            return TransactionCollection.Parser.ParseFrom(stream);
         }
     }
 }
