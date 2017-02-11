@@ -1,0 +1,14 @@
+﻿
+syntax = "proto3";
+package Cocopops.Protobuf.Model;
+option csharp_namespace = "Cocopops.Protobuf.Model.Transaction";
+
+import "BaseTransaction.proto";
+import "ExtendedTransaction.proto";
+
+message Transaction {
+	oneof transaction {
+		Cocopops.Protobuf.Model.BaseTransaction base_transaction = 1;
+		Cocopops.Protobuf.Model.ExtendedTransaction extended_transaction = 2;
+	}
+}

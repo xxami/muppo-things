@@ -1,0 +1,10 @@
+﻿
+syntax = "proto3";
+package Cocopops.Protobuf.Model;
+option csharp_namespace = "Cocopops.Protobuf.Model.TransactionCollection";
+
+import "Transaction.proto";
+
+message TransactionCollection {
+	repeated Cocopops.Protobuf.Model.Transaction transactions = 1;
+}

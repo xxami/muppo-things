@@ -1,11 +1,11 @@
 ﻿
 using System.IO;
 using Google.Protobuf;
-using Cocopops.Model.BaseTransaction;
-using Cocopops.Model.ExtendedTransaction;
-using Cocopops.Model.Transaction;
-using Cocopops.Model.TransactionCollection;
 using System;
+using Cocopops.Protobuf.Model.BaseTransaction;
+using Cocopops.Protobuf.Model.ExtendedTransaction;
+using Cocopops.Protobuf.Model.Transaction;
+using Cocopops.Protobuf.Model.TransactionCollection;
 
 namespace Cocopops
 {

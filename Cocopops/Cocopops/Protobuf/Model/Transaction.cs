@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Cocopops.Model.Transaction {
+namespace Cocopops.Protobuf.Model.Transaction {
 
   /// <summary>Holder for reflection information generated from Transaction.proto</summary>
   public static partial class TransactionReflection {
@@ -22,17 +22,18 @@ namespace Cocopops.Model.Transaction {
     static TransactionReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFUcmFuc2FjdGlvbi5wcm90bxIOQ29jb3BvcHMuTW9kZWwaFUJhc2VUcmFu",
-            "c2FjdGlvbi5wcm90bxoZRXh0ZW5kZWRUcmFuc2FjdGlvbi5wcm90byKeAQoL",
-            "VHJhbnNhY3Rpb24SOwoQYmFzZV90cmFuc2FjdGlvbhgBIAEoCzIfLkNvY29w",
-            "b3BzLk1vZGVsLkJhc2VUcmFuc2FjdGlvbkgAEkMKFGV4dGVuZGVkX3RyYW5z",
-            "YWN0aW9uGAIgASgLMiMuQ29jb3BvcHMuTW9kZWwuRXh0ZW5kZWRUcmFuc2Fj",
-            "dGlvbkgAQg0KC3RyYW5zYWN0aW9uQh2qAhpDb2NvcG9wcy5Nb2RlbC5UcmFu",
-            "c2FjdGlvbmIGcHJvdG8z"));
+            "ChFUcmFuc2FjdGlvbi5wcm90bxIXQ29jb3BvcHMuUHJvdG9idWYuTW9kZWwa",
+            "FUJhc2VUcmFuc2FjdGlvbi5wcm90bxoZRXh0ZW5kZWRUcmFuc2FjdGlvbi5w",
+            "cm90byKwAQoLVHJhbnNhY3Rpb24SRAoQYmFzZV90cmFuc2FjdGlvbhgBIAEo",
+            "CzIoLkNvY29wb3BzLlByb3RvYnVmLk1vZGVsLkJhc2VUcmFuc2FjdGlvbkgA",
+            "EkwKFGV4dGVuZGVkX3RyYW5zYWN0aW9uGAIgASgLMiwuQ29jb3BvcHMuUHJv",
+            "dG9idWYuTW9kZWwuRXh0ZW5kZWRUcmFuc2FjdGlvbkgAQg0KC3RyYW5zYWN0",
+            "aW9uQiaqAiNDb2NvcG9wcy5Qcm90b2J1Zi5Nb2RlbC5UcmFuc2FjdGlvbmIG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Cocopops.Model.BaseTransaction.BaseTransactionReflection.Descriptor, global::Cocopops.Model.ExtendedTransaction.ExtendedTransactionReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Cocopops.Protobuf.Model.BaseTransaction.BaseTransactionReflection.Descriptor, global::Cocopops.Protobuf.Model.ExtendedTransaction.ExtendedTransactionReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Cocopops.Model.Transaction.Transaction), global::Cocopops.Model.Transaction.Transaction.Parser, new[]{ "BaseTransaction", "ExtendedTransaction" }, new[]{ "Transaction" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Cocopops.Protobuf.Model.Transaction.Transaction), global::Cocopops.Protobuf.Model.Transaction.Transaction.Parser, new[]{ "BaseTransaction", "ExtendedTransaction" }, new[]{ "Transaction" }, null, null)
           }));
     }
     #endregion
@@ -46,7 +47,7 @@ namespace Cocopops.Model.Transaction {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Cocopops.Model.Transaction.TransactionReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Cocopops.Protobuf.Model.Transaction.TransactionReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -82,8 +83,8 @@ namespace Cocopops.Model.Transaction {
     /// <summary>Field number for the "base_transaction" field.</summary>
     public const int BaseTransactionFieldNumber = 1;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Cocopops.Model.BaseTransaction.BaseTransaction BaseTransaction {
-      get { return transactionCase_ == TransactionOneofCase.BaseTransaction ? (global::Cocopops.Model.BaseTransaction.BaseTransaction) transaction_ : null; }
+    public global::Cocopops.Protobuf.Model.BaseTransaction.BaseTransaction BaseTransaction {
+      get { return transactionCase_ == TransactionOneofCase.BaseTransaction ? (global::Cocopops.Protobuf.Model.BaseTransaction.BaseTransaction) transaction_ : null; }
       set {
         transaction_ = value;
         transactionCase_ = value == null ? TransactionOneofCase.None : TransactionOneofCase.BaseTransaction;
@@ -93,8 +94,8 @@ namespace Cocopops.Model.Transaction {
     /// <summary>Field number for the "extended_transaction" field.</summary>
     public const int ExtendedTransactionFieldNumber = 2;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Cocopops.Model.ExtendedTransaction.ExtendedTransaction ExtendedTransaction {
-      get { return transactionCase_ == TransactionOneofCase.ExtendedTransaction ? (global::Cocopops.Model.ExtendedTransaction.ExtendedTransaction) transaction_ : null; }
+    public global::Cocopops.Protobuf.Model.ExtendedTransaction.ExtendedTransaction ExtendedTransaction {
+      get { return transactionCase_ == TransactionOneofCase.ExtendedTransaction ? (global::Cocopops.Protobuf.Model.ExtendedTransaction.ExtendedTransaction) transaction_ : null; }
       set {
         transaction_ = value;
         transactionCase_ = value == null ? TransactionOneofCase.None : TransactionOneofCase.ExtendedTransaction;
@@ -202,7 +203,7 @@ namespace Cocopops.Model.Transaction {
             input.SkipLastField();
             break;
           case 10: {
-            global::Cocopops.Model.BaseTransaction.BaseTransaction subBuilder = new global::Cocopops.Model.BaseTransaction.BaseTransaction();
+            global::Cocopops.Protobuf.Model.BaseTransaction.BaseTransaction subBuilder = new global::Cocopops.Protobuf.Model.BaseTransaction.BaseTransaction();
             if (transactionCase_ == TransactionOneofCase.BaseTransaction) {
               subBuilder.MergeFrom(BaseTransaction);
             }
@@ -211,7 +212,7 @@ namespace Cocopops.Model.Transaction {
             break;
           }
           case 18: {
-            global::Cocopops.Model.ExtendedTransaction.ExtendedTransaction subBuilder = new global::Cocopops.Model.ExtendedTransaction.ExtendedTransaction();
+            global::Cocopops.Protobuf.Model.ExtendedTransaction.ExtendedTransaction subBuilder = new global::Cocopops.Protobuf.Model.ExtendedTransaction.ExtendedTransaction();
             if (transactionCase_ == TransactionOneofCase.ExtendedTransaction) {
               subBuilder.MergeFrom(ExtendedTransaction);
             }

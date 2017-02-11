@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Cocopops.Model.TransactionCollection {
+namespace Cocopops.Protobuf.Model.TransactionCollection {
 
   /// <summary>Holder for reflection information generated from TransactionCollection.proto</summary>
   public static partial class TransactionCollectionReflection {
@@ -22,15 +22,15 @@ namespace Cocopops.Model.TransactionCollection {
     static TransactionCollectionReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChtUcmFuc2FjdGlvbkNvbGxlY3Rpb24ucHJvdG8SDkNvY29wb3BzLk1vZGVs",
-            "GhFUcmFuc2FjdGlvbi5wcm90byJKChVUcmFuc2FjdGlvbkNvbGxlY3Rpb24S",
-            "MQoMdHJhbnNhY3Rpb25zGAEgAygLMhsuQ29jb3BvcHMuTW9kZWwuVHJhbnNh",
-            "Y3Rpb25CJ6oCJENvY29wb3BzLk1vZGVsLlRyYW5zYWN0aW9uQ29sbGVjdGlv",
-            "bmIGcHJvdG8z"));
+            "ChtUcmFuc2FjdGlvbkNvbGxlY3Rpb24ucHJvdG8SF0NvY29wb3BzLlByb3Rv",
+            "YnVmLk1vZGVsGhFUcmFuc2FjdGlvbi5wcm90byJTChVUcmFuc2FjdGlvbkNv",
+            "bGxlY3Rpb24SOgoMdHJhbnNhY3Rpb25zGAEgAygLMiQuQ29jb3BvcHMuUHJv",
+            "dG9idWYuTW9kZWwuVHJhbnNhY3Rpb25CMKoCLUNvY29wb3BzLlByb3RvYnVm",
+            "Lk1vZGVsLlRyYW5zYWN0aW9uQ29sbGVjdGlvbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Cocopops.Model.Transaction.TransactionReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Cocopops.Protobuf.Model.Transaction.TransactionReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Cocopops.Model.TransactionCollection.TransactionCollection), global::Cocopops.Model.TransactionCollection.TransactionCollection.Parser, new[]{ "Transactions" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Cocopops.Protobuf.Model.TransactionCollection.TransactionCollection), global::Cocopops.Protobuf.Model.TransactionCollection.TransactionCollection.Parser, new[]{ "Transactions" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +44,7 @@ namespace Cocopops.Model.TransactionCollection {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Cocopops.Model.TransactionCollection.TransactionCollectionReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Cocopops.Protobuf.Model.TransactionCollection.TransactionCollectionReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -71,11 +71,11 @@ namespace Cocopops.Model.TransactionCollection {
 
     /// <summary>Field number for the "transactions" field.</summary>
     public const int TransactionsFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Cocopops.Model.Transaction.Transaction> _repeated_transactions_codec
-        = pb::FieldCodec.ForMessage(10, global::Cocopops.Model.Transaction.Transaction.Parser);
-    private readonly pbc::RepeatedField<global::Cocopops.Model.Transaction.Transaction> transactions_ = new pbc::RepeatedField<global::Cocopops.Model.Transaction.Transaction>();
+    private static readonly pb::FieldCodec<global::Cocopops.Protobuf.Model.Transaction.Transaction> _repeated_transactions_codec
+        = pb::FieldCodec.ForMessage(10, global::Cocopops.Protobuf.Model.Transaction.Transaction.Parser);
+    private readonly pbc::RepeatedField<global::Cocopops.Protobuf.Model.Transaction.Transaction> transactions_ = new pbc::RepeatedField<global::Cocopops.Protobuf.Model.Transaction.Transaction>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Cocopops.Model.Transaction.Transaction> Transactions {
+    public pbc::RepeatedField<global::Cocopops.Protobuf.Model.Transaction.Transaction> Transactions {
       get { return transactions_; }
     }
 

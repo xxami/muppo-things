@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Cocopops.Model.ExtendedTransaction {
+namespace Cocopops.Protobuf.Model.ExtendedTransaction {
 
   /// <summary>Holder for reflection information generated from ExtendedTransaction.proto</summary>
   public static partial class ExtendedTransactionReflection {
@@ -22,16 +22,16 @@ namespace Cocopops.Model.ExtendedTransaction {
     static ExtendedTransactionReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChlFeHRlbmRlZFRyYW5zYWN0aW9uLnByb3RvEg5Db2NvcG9wcy5Nb2RlbBoV",
-            "QmFzZVRyYW5zYWN0aW9uLnByb3RvInEKE0V4dGVuZGVkVHJhbnNhY3Rpb24S",
-            "OQoQYmFzZV90cmFuc2FjdGlvbhgBIAEoCzIfLkNvY29wb3BzLk1vZGVsLkJh",
-            "c2VUcmFuc2FjdGlvbhIQCghjb21tZW50cxgCIAEoCRINCgVleHRyYRgDIAEo",
-            "CUIlqgIiQ29jb3BvcHMuTW9kZWwuRXh0ZW5kZWRUcmFuc2FjdGlvbmIGcHJv",
-            "dG8z"));
+            "ChlFeHRlbmRlZFRyYW5zYWN0aW9uLnByb3RvEhdDb2NvcG9wcy5Qcm90b2J1",
+            "Zi5Nb2RlbBoVQmFzZVRyYW5zYWN0aW9uLnByb3RvInoKE0V4dGVuZGVkVHJh",
+            "bnNhY3Rpb24SQgoQYmFzZV90cmFuc2FjdGlvbhgBIAEoCzIoLkNvY29wb3Bz",
+            "LlByb3RvYnVmLk1vZGVsLkJhc2VUcmFuc2FjdGlvbhIQCghjb21tZW50cxgC",
+            "IAEoCRINCgVleHRyYRgDIAEoCUIuqgIrQ29jb3BvcHMuUHJvdG9idWYuTW9k",
+            "ZWwuRXh0ZW5kZWRUcmFuc2FjdGlvbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Cocopops.Model.BaseTransaction.BaseTransactionReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Cocopops.Protobuf.Model.BaseTransaction.BaseTransactionReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Cocopops.Model.ExtendedTransaction.ExtendedTransaction), global::Cocopops.Model.ExtendedTransaction.ExtendedTransaction.Parser, new[]{ "BaseTransaction", "Comments", "Extra" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Cocopops.Protobuf.Model.ExtendedTransaction.ExtendedTransaction), global::Cocopops.Protobuf.Model.ExtendedTransaction.ExtendedTransaction.Parser, new[]{ "BaseTransaction", "Comments", "Extra" }, null, null, null)
           }));
     }
     #endregion
@@ -45,7 +45,7 @@ namespace Cocopops.Model.ExtendedTransaction {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Cocopops.Model.ExtendedTransaction.ExtendedTransactionReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Cocopops.Protobuf.Model.ExtendedTransaction.ExtendedTransactionReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -74,9 +74,9 @@ namespace Cocopops.Model.ExtendedTransaction {
 
     /// <summary>Field number for the "base_transaction" field.</summary>
     public const int BaseTransactionFieldNumber = 1;
-    private global::Cocopops.Model.BaseTransaction.BaseTransaction baseTransaction_;
+    private global::Cocopops.Protobuf.Model.BaseTransaction.BaseTransaction baseTransaction_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Cocopops.Model.BaseTransaction.BaseTransaction BaseTransaction {
+    public global::Cocopops.Protobuf.Model.BaseTransaction.BaseTransaction BaseTransaction {
       get { return baseTransaction_; }
       set {
         baseTransaction_ = value;
@@ -176,7 +176,7 @@ namespace Cocopops.Model.ExtendedTransaction {
       }
       if (other.baseTransaction_ != null) {
         if (baseTransaction_ == null) {
-          baseTransaction_ = new global::Cocopops.Model.BaseTransaction.BaseTransaction();
+          baseTransaction_ = new global::Cocopops.Protobuf.Model.BaseTransaction.BaseTransaction();
         }
         BaseTransaction.MergeFrom(other.BaseTransaction);
       }
@@ -198,7 +198,7 @@ namespace Cocopops.Model.ExtendedTransaction {
             break;
           case 10: {
             if (baseTransaction_ == null) {
-              baseTransaction_ = new global::Cocopops.Model.BaseTransaction.BaseTransaction();
+              baseTransaction_ = new global::Cocopops.Protobuf.Model.BaseTransaction.BaseTransaction();
             }
             input.ReadMessage(baseTransaction_);
             break;

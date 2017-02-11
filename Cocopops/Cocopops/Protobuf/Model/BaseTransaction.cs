@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Cocopops.Model.BaseTransaction {
+namespace Cocopops.Protobuf.Model.BaseTransaction {
 
   /// <summary>Holder for reflection information generated from BaseTransaction.proto</summary>
   public static partial class BaseTransactionReflection {
@@ -22,14 +22,15 @@ namespace Cocopops.Model.BaseTransaction {
     static BaseTransactionReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChVCYXNlVHJhbnNhY3Rpb24ucHJvdG8SDkNvY29wb3BzLk1vZGVsIlYKD0Jh",
-            "c2VUcmFuc2FjdGlvbhIkChx0cmFuc2FjdGlvbl9yZWZlcmVuY2VfbnVtYmVy",
-            "GAEgASgJEh0KFWV4ZWN1dGluZ19lbnRpdHlfY29kZRgCIAEoCUIhqgIeQ29j",
-            "b3BvcHMuTW9kZWwuQmFzZVRyYW5zYWN0aW9uYgZwcm90bzM="));
+            "ChVCYXNlVHJhbnNhY3Rpb24ucHJvdG8SF0NvY29wb3BzLlByb3RvYnVmLk1v",
+            "ZGVsIlYKD0Jhc2VUcmFuc2FjdGlvbhIkChx0cmFuc2FjdGlvbl9yZWZlcmVu",
+            "Y2VfbnVtYmVyGAEgASgJEh0KFWV4ZWN1dGluZ19lbnRpdHlfY29kZRgCIAEo",
+            "CUIqqgInQ29jb3BvcHMuUHJvdG9idWYuTW9kZWwuQmFzZVRyYW5zYWN0aW9u",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Cocopops.Model.BaseTransaction.BaseTransaction), global::Cocopops.Model.BaseTransaction.BaseTransaction.Parser, new[]{ "TransactionReferenceNumber", "ExecutingEntityCode" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Cocopops.Protobuf.Model.BaseTransaction.BaseTransaction), global::Cocopops.Protobuf.Model.BaseTransaction.BaseTransaction.Parser, new[]{ "TransactionReferenceNumber", "ExecutingEntityCode" }, null, null, null)
           }));
     }
     #endregion
@@ -43,7 +44,7 @@ namespace Cocopops.Model.BaseTransaction {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Cocopops.Model.BaseTransaction.BaseTransactionReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Cocopops.Protobuf.Model.BaseTransaction.BaseTransactionReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

@@ -1,7 +1,7 @@
 ﻿
 syntax = "proto3";
-package Cocopops.Model;
-option csharp_namespace = "Cocopops.Model.BaseTransaction";
+package Cocopops.Protobuf.Model;
+option csharp_namespace = "Cocopops.Protobuf.Model.BaseTransaction";
 
 message BaseTransaction {
 	string transaction_reference_number = 1;
