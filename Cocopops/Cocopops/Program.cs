@@ -10,7 +10,7 @@ namespace Cocopops
         {
             Console.WriteLine($" ░C░o░c░o░p░o░p░s░ {Environment.NewLine}");
 
-            var protoBench = new ProtoBenchmark(3);
+            var protoBench = new ProtoBenchmark(9999);
             protoBench.Run();
             Console.WriteLine(protoBench.GetResultMessage());
 

@@ -47,7 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Protobuf\ProtoExample.cs" />
+    <Compile Include="Protobuf\Example.cs" />
     <Compile Include="Protobuf\ProtoDataGenerator.cs" />
     <Compile Include="Protobuf\ProtoBenchmark.cs" />
     <Compile Include="Protobuf\Model\BaseTransaction.cs" />

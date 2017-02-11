@@ -9,7 +9,7 @@ using Cocopops.Protobuf.Model.TransactionCollection;
 
 namespace Cocopops.Protobuf
 {
-    class ProtoExample
+    class Example
     {
         static void Example()
         {
